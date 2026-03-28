@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kanishk Gaming | Pro Gamer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: white;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(45deg, #000, #001f3f);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            color: #00ffff;
+            text-shadow: 0 0 20px #00ffff;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        .hero button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #00ffff;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: sticky;
+            top: 0;
+            background: black;
+            padding: 15px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #00ffff;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-shadow: 0 0 10px #00ffff;
+        }
+
+        /* SECTION */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .card {
+            background: #111;
+            margin: 20px auto;
+            padding: 25px;
+            width: 85%;
+            border-radius: 12px;
+            box-shadow: 0 0 20px #00ffff;
+        }
+
+        /* STATS */
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .stat-box {
+            margin: 15px;
+            padding: 20px;
+            background: #111;
+            border-radius: 10px;
+            width: 150px;
+            box-shadow: 0 0 15px #00ffff;
+        }
+
+        .stat-box h2 {
+            color: #00ffff;
+        }
+
+        iframe {
+            width: 90%;
+            height: 350px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        footer {
+            background: black;
+            padding: 15px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>🎮 Kanishk Gaming</h1>
+    <p>Pro Gamer | Bedwars Champion | Content Creator</p>
+    <button onclick="scrollToVideos()">Watch Videos</button>
+</div>
+
+<!-- NAV -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#stats">Stats</a>
+    <a href="#videos">Videos</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="card">
+        <h2>🔥 About Me</h2>
+        <p>I am Kanishk, a competitive gamer who loves Bedwars and action games.  
+        I create content and aim to become a top gamer!</p>
+    </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+    <h2>📊 Gaming Stats</h2>
+
+    <div class="stats">
+        <div class="stat-box">
+            <h2>150+</h2>
+            <p>Wins</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>50+</h2>
+            <p>Videos</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>1000+</h2>
+            <p>Subscribers</p>
+        </div>
+    </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos">
+    <div class="card">
+        <h2>🎥 Latest Gameplay</h2>
+
+        <!-- Replace VIDEO_ID -->
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="card">
+        <h2>📱 Contact</h2>
+        <p>Email: kanishkmanitripathi4@gmail.com@email.com</p>
+        <p>Instagram: @unk_nownboy2011</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Kanishk Gaming | Pro Gamer
+</footer>
+
+<script>
+function scrollToVideos() {
+    document.getElementById("videos").scrollIntoView();
+}
+</script>
+
+</body>
+</html>
